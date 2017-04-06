@@ -2,7 +2,7 @@ import pyglet
 
 game_window = pyglet.window.Window(600, 400)
 
-background = pyglet.image.load('background.png')
+background = pyglet.image.load_animation('background.gif')
 back = pyglet.sprite.Sprite(background)
 
 #back.queue(background)
@@ -23,11 +23,10 @@ def on_draw():
 
 #def on_
 
-def update(dt):
-    
-    back.x += dt * -100
+#def update(dt):
+ 
 
 
-pyglet.clock.schedule_interval(update, 1/60.)
+#pyglet.clock.schedule_interval(update, 1/60.)
 
 pyglet.app.run()
